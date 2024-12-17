@@ -821,7 +821,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Tʀᴇɴᴅɪɴɢ ⚡', callback_data='trending'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ 🦋', callback_data=f'about')
                 ],[
-                InlineKeyboardButton('❗ 𝙳𝙸𝚂𝙲𝙻𝙰𝙸𝙼𝙴𝚁 ❗', url="")
+                InlineKeyboardButton('❗ 𝙳𝙸𝚂𝙲𝙻𝙰𝙸𝙼𝙴𝚁 ❗', url="https://telegra.ph/DISCLAIMER-11-20-32")
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
