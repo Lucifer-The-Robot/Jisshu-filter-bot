@@ -1487,10 +1487,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("✨ ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
 		InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ 🔊", callback_data=f"languages#{key}#{offset}#{req}")
          ])  
-            btn.insert(0,[   
-          InlineKeyboardButton("❗ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ❗", user_id=ADMINS[0])
-	    ])
-    else:
+else:
             btn.insert(0,[
                 InlineKeyboardButton("♨️ ꜱᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
             ])
@@ -1498,11 +1495,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ 🦋", callback_data=f"qualities#{key}#{offset}#{req}"),
                 InlineKeyboardButton("✨ ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ 🔊", callback_data=f"languages#{key}#{offset}#{req}")
-      ])
-           btn.insert(0,[
-            InlineKeyboardButton("❗ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ❗", user_id=ADMINS[0])
-        ])
-                             
+      ])                             
     if spoll:
         m = await msg.message.edit(f"<b><code>{search}</code> ɪs ꜰᴏᴜɴᴅ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ꜰᴏʀ ꜰɪʟᴇs 📫</b>")
         await asyncio.sleep(1.2)
